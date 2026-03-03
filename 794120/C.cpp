@@ -4,8 +4,8 @@ using namespace std;
 
 int main(){
 
-    int n;
-    vector<int> vec;
+    long long n;
+    vector<long long> vec;
 
     cin >> n;
     vec.push_back(n);
@@ -18,9 +18,11 @@ int main(){
         vec.push_back(n);
     }
     
-    for (int i : vec){
-        cout << i << " ";
+    for (int i = 0; i < vec.size(); i++){
+        cout << vec[i];
+        if (i < vec.size() - 1) cout << " ";
     }
+
 
     return 0;
 }
